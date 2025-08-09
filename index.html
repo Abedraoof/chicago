@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a353a9e1a1a8877fb94cffe60894567 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a353a9e1a1a8877fb94cffe60894567" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a353a9e1a1a8877fb94cffe60894567 = L.map(
+                "map_5a353a9e1a1a8877fb94cffe60894567",
+                {
+                    center: [40.758, -73.9855],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff4adf48a11692eed42827d826bfd349 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            var circle_marker_68eb09181565802584c3a6ba969a105a = L.circleMarker(
+                [40.7589, -73.9851],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_b8ffee9fcf47d7bbd30feae062d16fb4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b380e72ff16897324601bf851c0abf8c = $(`<div id="html_b380e72ff16897324601bf851c0abf8c" style="width: 100.0%; height: 100.0%;"><b>Broadway</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_b8ffee9fcf47d7bbd30feae062d16fb4.setContent(html_b380e72ff16897324601bf851c0abf8c);
+            
+        
+
+        circle_marker_68eb09181565802584c3a6ba969a105a.bindPopup(popup_b8ffee9fcf47d7bbd30feae062d16fb4)
+        ;
+
+        
+    
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            var circle_marker_7cd53476b0a2e1576f32a7e12296a7a7 = L.circleMarker(
+                [40.7588, -73.9799],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_5fa0e6f07c0c317eae30b5263d3564aa = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8fc7b6b42a7774fe00b62d06e785b170 = $(`<div id="html_8fc7b6b42a7774fe00b62d06e785b170" style="width: 100.0%; height: 100.0%;"><b>5th Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_5fa0e6f07c0c317eae30b5263d3564aa.setContent(html_8fc7b6b42a7774fe00b62d06e785b170);
+            
+        
+
+        circle_marker_7cd53476b0a2e1576f32a7e12296a7a7.bindPopup(popup_5fa0e6f07c0c317eae30b5263d3564aa)
+        ;
+
+        
+    
+    
+            var circle_marker_2ae55c4db121847ee2842e0c08bbb10c = L.circleMarker(
+                [40.7061, -74.0093],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_4b86b55379196b0aa9bf718d2a5d8fcd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a59724a2490c2fe96092f08bb0ffd4c8 = $(`<div id="html_a59724a2490c2fe96092f08bb0ffd4c8" style="width: 100.0%; height: 100.0%;"><b>Wall Street</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.93<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 8.3 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_4b86b55379196b0aa9bf718d2a5d8fcd.setContent(html_a59724a2490c2fe96092f08bb0ffd4c8);
+            
+        
+
+        circle_marker_2ae55c4db121847ee2842e0c08bbb10c.bindPopup(popup_4b86b55379196b0aa9bf718d2a5d8fcd)
+        ;
+
+        
+    
+    
+            var circle_marker_eed118d39c02e6eae2135c9652dda13a = L.circleMarker(
+                [40.7554, -73.9782],
+                {"bubblingMouseEvents": true, "color": "#ffd700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_c18bb25ab10c1d2da8e2427b56e5b66b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_936abe6004f7e73c09639da2fea7cd8c = $(`<div id="html_936abe6004f7e73c09639da2fea7cd8c" style="width: 100.0%; height: 100.0%;"><b>Park Avenue</b><br>Safety Level: 5 / 10<br>Weighted Score: 71.71<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 1<br></div>`)[0];
+                popup_c18bb25ab10c1d2da8e2427b56e5b66b.setContent(html_936abe6004f7e73c09639da2fea7cd8c);
+            
+        
+
+        circle_marker_eed118d39c02e6eae2135c9652dda13a.bindPopup(popup_c18bb25ab10c1d2da8e2427b56e5b66b)
+        ;
+
+        
+    
+    
+            var circle_marker_1848eae53b88db086a22e9f700d2bb43 = L.circleMarker(
+                [40.7558, -73.9829],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_14475d4d1adfeebaf4276fedcdd7e174 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_be6ee9fc00cfb26f8bef42f259730a42 = $(`<div id="html_be6ee9fc00cfb26f8bef42f259730a42" style="width: 100.0%; height: 100.0%;"><b>Madison Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.93<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 8.3 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_14475d4d1adfeebaf4276fedcdd7e174.setContent(html_be6ee9fc00cfb26f8bef42f259730a42);
+            
+        
+
+        circle_marker_1848eae53b88db086a22e9f700d2bb43.bindPopup(popup_14475d4d1adfeebaf4276fedcdd7e174)
+        ;
+
+        
+    
+    
+            var circle_marker_5f82f9b9085645609e9e136310fad7a5 = L.circleMarker(
+                [40.7523, -73.9765],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_d93c8d61dc133bc4914e24408f7f3334 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_499f4d9b0ed44fe5123a39545a61a77c = $(`<div id="html_499f4d9b0ed44fe5123a39545a61a77c" style="width: 100.0%; height: 100.0%;"><b>Lexington Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_d93c8d61dc133bc4914e24408f7f3334.setContent(html_499f4d9b0ed44fe5123a39545a61a77c);
+            
+        
+
+        circle_marker_5f82f9b9085645609e9e136310fad7a5.bindPopup(popup_d93c8d61dc133bc4914e24408f7f3334)
+        ;
+
+        
+    
+</script>
+</html><!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a353a9e1a1a8877fb94cffe60894567 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a353a9e1a1a8877fb94cffe60894567" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a353a9e1a1a8877fb94cffe60894567 = L.map(
+                "map_5a353a9e1a1a8877fb94cffe60894567",
+                {
+                    center: [40.758, -73.9855],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff4adf48a11692eed42827d826bfd349 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            var circle_marker_68eb09181565802584c3a6ba969a105a = L.circleMarker(
+                [40.7589, -73.9851],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_b8ffee9fcf47d7bbd30feae062d16fb4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b380e72ff16897324601bf851c0abf8c = $(`<div id="html_b380e72ff16897324601bf851c0abf8c" style="width: 100.0%; height: 100.0%;"><b>Broadway</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_b8ffee9fcf47d7bbd30feae062d16fb4.setContent(html_b380e72ff16897324601bf851c0abf8c);
+            
+        
+
+        circle_marker_68eb09181565802584c3a6ba969a105a.bindPopup(popup_b8ffee9fcf47d7bbd30feae062d16fb4)
+        ;
+
+        
+    
+    
+            tile_layer_ff4adf48a11692eed42827d826bfd349.addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+            var circle_marker_7cd53476b0a2e1576f32a7e12296a7a7 = L.circleMarker(
+                [40.7588, -73.9799],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_5fa0e6f07c0c317eae30b5263d3564aa = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8fc7b6b42a7774fe00b62d06e785b170 = $(`<div id="html_8fc7b6b42a7774fe00b62d06e785b170" style="width: 100.0%; height: 100.0%;"><b>5th Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_5fa0e6f07c0c317eae30b5263d3564aa.setContent(html_8fc7b6b42a7774fe00b62d06e785b170);
+            
+        
+
+        circle_marker_7cd53476b0a2e1576f32a7e12296a7a7.bindPopup(popup_5fa0e6f07c0c317eae30b5263d3564aa)
+        ;
+
+        
+    
+    
+            var circle_marker_2ae55c4db121847ee2842e0c08bbb10c = L.circleMarker(
+                [40.7061, -74.0093],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_4b86b55379196b0aa9bf718d2a5d8fcd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a59724a2490c2fe96092f08bb0ffd4c8 = $(`<div id="html_a59724a2490c2fe96092f08bb0ffd4c8" style="width: 100.0%; height: 100.0%;"><b>Wall Street</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.93<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 8.3 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_4b86b55379196b0aa9bf718d2a5d8fcd.setContent(html_a59724a2490c2fe96092f08bb0ffd4c8);
+            
+        
+
+        circle_marker_2ae55c4db121847ee2842e0c08bbb10c.bindPopup(popup_4b86b55379196b0aa9bf718d2a5d8fcd)
+        ;
+
+        
+    
+    
+            var circle_marker_eed118d39c02e6eae2135c9652dda13a = L.circleMarker(
+                [40.7554, -73.9782],
+                {"bubblingMouseEvents": true, "color": "#ffd700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_c18bb25ab10c1d2da8e2427b56e5b66b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_936abe6004f7e73c09639da2fea7cd8c = $(`<div id="html_936abe6004f7e73c09639da2fea7cd8c" style="width: 100.0%; height: 100.0%;"><b>Park Avenue</b><br>Safety Level: 5 / 10<br>Weighted Score: 71.71<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 1<br></div>`)[0];
+                popup_c18bb25ab10c1d2da8e2427b56e5b66b.setContent(html_936abe6004f7e73c09639da2fea7cd8c);
+            
+        
+
+        circle_marker_eed118d39c02e6eae2135c9652dda13a.bindPopup(popup_c18bb25ab10c1d2da8e2427b56e5b66b)
+        ;
+
+        
+    
+    
+            var circle_marker_1848eae53b88db086a22e9f700d2bb43 = L.circleMarker(
+                [40.7558, -73.9829],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_14475d4d1adfeebaf4276fedcdd7e174 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_be6ee9fc00cfb26f8bef42f259730a42 = $(`<div id="html_be6ee9fc00cfb26f8bef42f259730a42" style="width: 100.0%; height: 100.0%;"><b>Madison Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.93<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 8.3 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_14475d4d1adfeebaf4276fedcdd7e174.setContent(html_be6ee9fc00cfb26f8bef42f259730a42);
+            
+        
+
+        circle_marker_1848eae53b88db086a22e9f700d2bb43.bindPopup(popup_14475d4d1adfeebaf4276fedcdd7e174)
+        ;
+
+        
+    
+    
+            var circle_marker_5f82f9b9085645609e9e136310fad7a5 = L.circleMarker(
+                [40.7523, -73.9765],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(map_5a353a9e1a1a8877fb94cffe60894567);
+        
+    
+        var popup_d93c8d61dc133bc4914e24408f7f3334 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_499f4d9b0ed44fe5123a39545a61a77c = $(`<div id="html_499f4d9b0ed44fe5123a39545a61a77c" style="width: 100.0%; height: 100.0%;"><b>Lexington Avenue</b><br>Safety Level: 6 / 10<br>Weighted Score: 57.85<br><hr><b>Incident Counts (last 180 days - 300m radius):</b><br>Crimes (Recent/Older/Total): 0/0/0<br>Accidents (Recent/Older/Total): 0/0/0<br>311 Requests (Recent/Older/Total): 0/0/0<br>Wikidata Incidents (Recent/Older/Total): 0/0/0<br><hr><b>Area Features:</b><br>OSM Bars: 0<br>OSM Schools: 0<br>OSM Streetlights: 0<br>OSM Transit Stops: 0<br>OSM Restaurants: 0<br>OSM Police Stations: 0<br>OSM Hospitals: 0<br>OSM Surveillance: 0<br>OSM Traffic Signals: 0<br>OSM Crossings: 0<br>OSM Parks: 0<br>OSM Fire Stations: 0<br><hr><b>Weather & Air Quality:</b><br>Temperature: 80.1°F<br>Wind Speed: 7.2 kph<br>Weather Condition Score: 0<br>PM2.5: 19.24 µg/m³<br>PM10: 20.16 µg/m³<br>Wildfires Nearby: 0<br>Earthquakes Nearby: 0<br></div>`)[0];
+                popup_d93c8d61dc133bc4914e24408f7f3334.setContent(html_499f4d9b0ed44fe5123a39545a61a77c);
+            
+        
+
+        circle_marker_5f82f9b9085645609e9e136310fad7a5.bindPopup(popup_d93c8d61dc133bc4914e24408f7f3334)
+        ;
+
+        
+    
+</script>
+</html>
